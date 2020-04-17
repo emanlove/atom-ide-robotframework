@@ -1,0 +1,29 @@
+{
+  "name": "atom-ide-robotframework",
+  "version": "0.0.1",
+  "description": "This is where the description goes.",
+  "main": "./lib/main",
+  "scripts": {
+    "test": "testcmd"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emanlove/atom-ide-robotframework.git"
+  },
+  "keywords": [
+    "ide",
+    "robotframework",
+    "languageserver",
+    "language-server-protocol",
+    "language-client"
+  ],
+  "dependencies": {
+    "atom-languageclient": "0.9.9"
+  },
+  "author": "Ed Manlove",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/emanlove/atom-ide-robotframework/issues"
+  },
+  "homepage": "https://github.com/emanlove/atom-ide-robotframework#readme"
+}
