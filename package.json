@@ -1,10 +1,10 @@
 {
   "name": "atom-ide-robotframework",
   "version": "0.0.1",
-  "description": "This is where the description goes.",
+  "description": "Robot Framework language server client for the Atom IDE.",
   "main": "./lib/main",
   "scripts": {
-    "test": "testcmd"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -21,9 +21,26 @@
     "atom-languageclient": "0.9.9"
   },
   "author": "Ed Manlove",
-  "license": "",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/emanlove/atom-ide-robotframework/issues"
   },
-  "homepage": "https://github.com/emanlove/atom-ide-robotframework#readme"
+  "homepage": "https://github.com/emanlove/atom-ide-robotframework#readme",
+  "enhancedScopes": [
+    "source.robot"
+  ],
+  "consumedServices": {
+    "datatip": {
+      "versions": {
+        "0.1.0": "consumeDatatip"
+      }
+    }
+  },
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "2.0.0": "provideAutocomplete"
+      }
+    }
+  }
 }
