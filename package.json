@@ -42,5 +42,14 @@
         "2.0.0": "provideAutocomplete"
       }
     }
+  },
+  "configSchema": {
+    "python": {
+      "title": "Python Executable",
+      "type": "string",
+      "default": "python",
+      "description": "The path to the Python Executable. This python will run the language server",
+      "order": 1
+    }
   }
 }
