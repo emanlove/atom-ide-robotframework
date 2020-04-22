@@ -15,6 +15,8 @@ atom-ide-robotframework is an Atom LSP package providing language support.
 
 **On configuration of python executable can we do a check then and indicate to user whether successful or not?** TBD
 
+**Bind to running server** The existing model and implementation has the RF client starting up the ls. Is is possible to have it instead talk to an already running server? In part I want to do this for debugging purposes. Run the server independentally and where I can debug separate from the client.
+
 ## On consumedServices and providedServices ##
 Within the package.json files of all the other ide-clients there is a list of consumedServices and providedServices. My initial assumption was that these were language server specifc services but I now see they are shared functions within other Atom packages. This functionality is outlined in the "[Interacting With Other Packages Via Services](https://flight-manual.atom.io/behind-atom/sections/interacting-with-other-packages-via-services/)" section of the Atom documentation with the introduction announcement can be found [here](https://blog.atom.io/2015/03/25/new-services-API.html). With this correct understanding of the services I will list all those provide in the atom-languageclient package, which we inherit.
 
